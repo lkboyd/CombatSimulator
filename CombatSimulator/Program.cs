@@ -15,6 +15,7 @@ namespace CombatSimulator
         static bool gamePlaying = true;
         static int userHits = 100;
         static int dragonHits = 200;
+        
 
         /// <summary>
         /// Main function that contains the loop for the game play.  If conditions continue to be true the game continues
@@ -45,6 +46,9 @@ namespace CombatSimulator
                 Console.Clear();
                 Console.WriteLine("Choose a. Sword, b. Magic, or c. Health");
                 string userInput = Console.ReadLine();
+                ValidateInput(userInput);
+           
+        
             }
 
             if (userHits == 0)
