@@ -47,7 +47,7 @@ namespace CombatSimulator
                 Console.WriteLine("Choose a. Sword, b. Magic, or c. Health");
                 string userInput = Console.ReadLine();
                 ValidateInput(userInput);
-           
+                PlayingGame(userInput);
         
             }
 
